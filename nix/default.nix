@@ -1,26 +1,26 @@
 # Prebuilt binary package. Build: nix-build -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
 { lib, stdenv, fetchurl }:
 let
-  version = "0.6.34";
+  version = "0.6.35";
   sources = {
     x86_64-linux = {
       url = "https://github.com/AndrewFribush/tokenpylon-releases/releases/download/v${version}/tokenpylon_${version}_linux_amd64.tar.gz";
-      hash = "sha256-SmMxSjdE7JZw/MpAqI9Dbxado0cAb8uFGP1aBcRSrFI=";
+      hash = "sha256-iTwovptq7H4j3Ix9fY0CN79fYecWIy2MEyLng895C6g=";
       dir = "tokenpylon_${version}_linux_amd64";
     };
     aarch64-linux = {
       url = "https://github.com/AndrewFribush/tokenpylon-releases/releases/download/v${version}/tokenpylon_${version}_linux_arm64.tar.gz";
-      hash = "sha256-QdwMvEyNuOhBZEUY9t3au/5SxBHuGU9IBxA35rbLi/s=";
+      hash = "sha256-Z+vcs/85wZwNf+nRzBaT7p4N6TFPHlPhqjyOPYWw8Po=";
       dir = "tokenpylon_${version}_linux_arm64";
     };
     x86_64-darwin = {
       url = "https://github.com/AndrewFribush/tokenpylon-releases/releases/download/v${version}/tokenpylon_${version}_darwin_amd64.tar.gz";
-      hash = "sha256-l+XzkbAy0yh0QQzozxAQhV7gEYDosGkY3Q+YIhuAEp0=";
+      hash = "sha256-Nc6swU5PayBZ/9TBoCOJm6y2F5FUATODJQLo0goGdYM=";
       dir = "tokenpylon_${version}_darwin_amd64";
     };
     aarch64-darwin = {
       url = "https://github.com/AndrewFribush/tokenpylon-releases/releases/download/v${version}/tokenpylon_${version}_darwin_arm64.tar.gz";
-      hash = "sha256-bB2JQzrHjd6LrXeHv8t7SgjwVDdZ0OYmLtPvUPgQ6ig=";
+      hash = "sha256-c2ASLalEV8OT8BMDCnbktN5GuF2XZEaTUq9ossFkHd4=";
       dir = "tokenpylon_${version}_darwin_arm64";
     };
   };
